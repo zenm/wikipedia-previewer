@@ -135,19 +135,22 @@ html{
   width: 100%;
   margin: .5rem 0 0 0;
   font-family: 'Rubik', sans-serif;
-  background-color: #DDDCDB;.
+  background-color: #DDDCDB;
 }
 
 .result-title{
   font-size: 1.5rem;
   font-weight: 700;
-  margin: 1rem 1rem 0 1rem;
+  margin: 0 1rem;
+  padding: .5rem 0 ;
 }
 
 .result-description {
   font-size: 1rem;
-  margin: 0 1rem 1rem 1rem;
+  margin: 0 1rem;
+  padding-bottom: .5rem ;
 }
+
 
 .result-link {
  text-decoration: none;
@@ -163,10 +166,12 @@ html{
 footer{
   text-align: center;
   width: 100%;
-}
-.credits{
   font-size: .5rem;
+  font-family: 'Rubik', sans-serif;
+}
 
+footer a{
+  color: #006400;
 }
 @media only screen and (min-width: 768px) {
 
