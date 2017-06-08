@@ -38,16 +38,11 @@
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
 }
 
-html{
+html {
   font-size: 16px;
 }
 
-/*body,
-* {
-  border: 1px dashed pink;
-}*/
-
-.container{
+.container {
   display: flex;
   flex-flow: column wrap;
   width: 95%;
@@ -56,15 +51,14 @@ html{
   font-family:'Libre Baskerville', serif;
 }
 
-
 /*Title Area*/
 .title-area,
-.input-area{
+.input-area {
   text-align: center;
   /*height: 9rem;*/
 }
 
-.title-area{
+.title-area {
   font-family: 'Libre Baskerville', serif;
   padding: 4rem 0 0 0;
   background-image: url("../images/Wikipedia-logo-v2.svg");
@@ -83,6 +77,7 @@ html{
   margin: 1rem 0;
   background-color: rgba(255, 255, 255, 0.85);
   display: inline-block;
+  line-height: 1.2;
 }
 
 .title-area h3 {
@@ -95,6 +90,7 @@ html{
 .input-area {
   margin: 1rem;
 }
+
 .search {
   width: 100%;
   text-align: center;
@@ -110,17 +106,16 @@ html{
 
 .input-area label {
   font-size: 1.5rem;
-  /*margin: 1rem 0 1rem 0;*/
 }
 
 
-.wiki-search{
+.wiki-search {
   font-size: 2rem;
   padding: 1rem 0 1rem 0;
   margin: 1rem 0 1rem 0;
 }
 
-.error-search{
+.error-search {
   border: 1px solid red;
 }
 
@@ -130,6 +125,7 @@ html{
   margin: .5rem 0;
   padding: 2rem 0;
 }
+
 /*results area*/
 .result-card {
   width: 100%;
@@ -138,7 +134,7 @@ html{
   background-color: #DDDCDB;
 }
 
-.result-title{
+.result-title {
   font-size: 1.5rem;
   font-weight: 700;
   margin: 0 1rem;
@@ -163,16 +159,18 @@ html{
 }
 
 /* footer area*/
-footer{
+footer {
+  margin: 1rem 0;
   text-align: center;
   width: 100%;
-  font-size: .5rem;
+  font-size: 1rem;
   font-family: 'Rubik', sans-serif;
 }
 
-footer a{
+footer a {
   color: #006400;
 }
+
 @media only screen and (min-width: 768px) {
 
 }
