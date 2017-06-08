@@ -112,7 +112,7 @@ html {
 .wiki-search {
   font-size: 2rem;
   padding: 1rem 0 1rem 0;
-  margin: 1rem 0 1rem 0;
+  margin: 2rem 0;
 }
 
 .error-search {
@@ -173,4 +173,65 @@ footer a {
 
 @media only screen and (min-width: 768px) {
 
+  .container {
+    max-width: 60rem;
+    margin: 0 auto;
+  }
+
+
+  .title-area {
+    max-width: 60rem;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .title-area h1 {
+    font-size: 2rem;
+    margin: 1rem;
+  }
+
+  .title-area h3 {
+    font-size: 1rem;
+  }
+  .input-label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .wiki-search,
+  .wiki-submit {
+    padding: .5rem 0;
+  }
+
+  .input-area input,
+  .input-area button {
+    font-size: 1rem;
+  }
+
+  .input-area .search.wiki-submit:hover,
+  .input-area button:hover {
+    background-color: hsl(0,0%,90%);
+  }
+
+  .random-entry {
+    padding: .5rem 0;
+  }
+
+  .search.wiki-submit,
+  .search.wiki-search {
+    margin: 0 1rem;
+  }
+
+  .input-submit {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 1rem;
+  }
+
+  .results-area {
+    width: 75%;
+    margin: 0 auto;
+  }
 }
