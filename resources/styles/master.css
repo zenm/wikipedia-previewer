@@ -38,15 +38,24 @@
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
 }
 
+html{
+  font-size: 16px;
+}
+
+/*body,
+* {
+  border: 1px dashed pink;
+}*/
 
 .container{
   display: flex;
   flex-flow: column wrap;
+  width: 95%;
+  margin: 0 auto;
+  font: #000;
+  font-family:'Libre Baskerville', serif;
 }
 
-html{
-  font-size: 16px;
-}
 
 /*Title Area*/
 .title-area,
@@ -57,25 +66,23 @@ html{
 
 .title-area{
   font-family: 'Libre Baskerville', serif;
-  padding: 4rem 0 4rem 0;
+  padding: 4rem 0 0 0;
   background-image: url("../images/Wikipedia-logo-v2.svg");
   background-size: cover;
   background-position: center;
-  height auto;
-  width: 100%;
+  height: auto;
+  width: auto;
   font-weight: 700;
   display: flex;
   align-items: center;
-  
-  /*flex-flow: column;*/
+  flex-flow: column;
 }
 
 .title-area h1 {
   font-size: 3rem;
   margin: 1rem 0;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.85);
   display: inline-block;
-
 }
 
 .title-area h3 {
@@ -83,7 +90,11 @@ html{
   background-color: rgba(255, 255, 255, 0.8);
   display: inline-block;
 }
+
 /*Search input*/
+.input-area {
+  margin: 1rem;
+}
 .search {
   width: 100%;
   text-align: center;
@@ -97,29 +108,66 @@ html{
   font-weight: 700px;
 }
 
-.input-area #wiki-search{
-  font-size: 2rem;
-  padding: 1rem 0 1rem 0;
+.input-area label {
+  font-size: 1.5rem;
+  /*margin: 1rem 0 1rem 0;*/
 }
 
-#wiki-submit,
+
+.wiki-search{
+  font-size: 2rem;
+  padding: 1rem 0 1rem 0;
+  margin: 1rem 0 1rem 0;
+}
+
+.error-search{
+  border: 1px solid red;
+}
+
+.wiki-submit,
 .random-entry {
   border-radius: 50px;
   margin: .5rem 0;
   padding: 2rem 0;
 }
-
+/*results area*/
 .result-card {
   width: 100%;
+  margin: .5rem 0 0 0;
+  font-family: 'Rubik', sans-serif;
+  background-color: #DDDCDB;.
 }
 
+.result-title{
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 1rem 1rem 0 1rem;
+}
 
+.result-description {
+  font-size: 1rem;
+  margin: 0 1rem 1rem 1rem;
+}
 
+.result-link {
+ text-decoration: none;
+ color: #000;
+}
+
+.searchmatch {
+  font-weight: 700;
+  color: #48423C;
+}
+
+/* footer area*/
+footer{
+  text-align: center;
+  width: 100%;
+}
+.credits{
+  font-size: .5rem;
+
+}
 @media only screen and (min-width: 768px) {
 
-}
-
-body,
-* {
-  border: 1px dashed pink;
 }

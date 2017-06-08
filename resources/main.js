@@ -1,12 +1,12 @@
 $(document).ready(function(){
 
   //Gets user's search term on click
-  $("#wiki-submit").on("click", function(){
+  $(".wiki-submit").on("click", function(){
     onUserSubmit();
   });
 
   function onUserSubmit(){
-    var $button = $("#wiki-submit").attr("value");
+    var $button = $(".wiki-submit").attr("value");
     if ($button == "Submit" && $("#wiki-search").val()) {
       $(".result-card, .result-link").remove();
       getUserSearchTerm();
@@ -18,13 +18,17 @@ $(document).ready(function(){
       $("#wiki-search").val("");
     } else {
       $(".results-area").append(function(){
-        $(this).html("<h2>You'll need to search for something.</h2>");
+        // $(this).html("<h2>You'll need to search for something.</h2>");
         $(".results-area h2").addClass("result-card");
+        $("#wiki-search").addClass("error-search");
       });
     }
   }
   //Gets user's search term on enter
   $("#wiki-search").on("keypress", function(e){
+    $(".result-card, .result-link").remove();
+    $("#wiki-search").removeClass("error-search")
+    console.log("keypress");
     var key = e.which;
     if(key == 13){//Enter key pressed
       onUserSubmit();
@@ -33,8 +37,8 @@ $(document).ready(function(){
 
   // Changes the button from Submit to Clear
   function changeButton() {
-    var $button = $("#wiki-submit").attr("value");
-    $("#wiki-submit").attr("value", function(){
+    var $button = $(".wiki-submit").attr("value");
+    $(".wiki-submit").attr("value", function(){
       return $button == "Submit" ? "Clear" : "Submit";
     });
   }
@@ -49,7 +53,7 @@ $(document).ready(function(){
     var $userSearchValue = $("#wiki-search").val();
     if ( $userSearchValue ) {
     } else {
-      $("#wiki-submit").attr("value", "Submit");
+      $(".wiki-submit").attr("value", "Submit");
     }
   });
 
