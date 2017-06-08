@@ -1,3 +1,124 @@
+@font-face {
+  font-family: 'Libre Baskerville';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Libre Baskerville'), local('LibreBaskerville-Regular'), url(https://fonts.gstatic.com/s/librebaskerville/v4/pR0sBQVcY0JZc_ciXjFsK6Ucnt8gjcHpqyffjHeZWDA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+@font-face {
+  font-family: 'Libre Baskerville';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Libre Baskerville Bold'), local('LibreBaskerville-Bold'), url(https://fonts.gstatic.com/s/librebaskerville/v4/kH7K4InNTm7mmOXXjrA5v6y7YSlLHrWsjpD3RcrnyFM.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+@font-face {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Rubik'), local('Rubik-Regular'), url(https://fonts.gstatic.com/s/rubik/v4/_mlO9_1N7oXYhEnEzC2l-g.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+@font-face {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Rubik Bold'), local('Rubik-Bold'), url(https://fonts.gstatic.com/s/rubik/v4/0hS39AKxpJlEXQF3mVPgrvesZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+@font-face {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Rubik Black'), local('Rubik-Black'), url(https://fonts.gstatic.com/s/rubik/v4/q1zR17dXuC8hEk69Lb7Bo_esZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+
+.container{
+  display: flex;
+  flex-flow: column wrap;
+}
+
+html{
+  font-size: 16px;
+}
+
+/*Title Area*/
+.title-area,
+.input-area{
+  text-align: center;
+  /*height: 9rem;*/
+}
+
+.title-area{
+  font-family: 'Libre Baskerville', serif;
+  padding: 4rem 0 4rem 0;
+  background-image: url("../images/Wikipedia-logo-v2.svg");
+  background-size: cover;
+  background-position: center;
+  height auto;
+  width: 100%;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  
+  /*flex-flow: column;*/
+}
+
+.title-area h1 {
+  font-size: 3rem;
+  margin: 1rem 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  display: inline-block;
+
+}
+
+.title-area h3 {
+  font-size: 2rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  display: inline-block;
+}
+/*Search input*/
+.search {
+  width: 100%;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.input-area input,
+.input-area button {
+  font-size: 1.5rem;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 700px;
+}
+
+.input-area #wiki-search{
+  font-size: 2rem;
+  padding: 1rem 0 1rem 0;
+}
+
+#wiki-submit,
+.random-entry {
+  border-radius: 50px;
+  margin: .5rem 0;
+  padding: 2rem 0;
+}
+
+.result-card {
+  width: 100%;
+}
+
+
+
+@media only screen and (min-width: 768px) {
+
+}
+
 body,
 * {
   border: 1px dashed pink;
